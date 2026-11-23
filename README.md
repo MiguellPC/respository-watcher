@@ -1,16 +1,83 @@
-# React + Vite
+# Repository Watcher
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React app for keeping a list of GitHub repositories and browsing their issues. Add a repository by entering its `owner/repository` name, then view its details and filter or navigate through its issues.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Overview](#overview)
+  - [Features](#features)
+  - [Links](#links)
+- [Getting started](#getting-started)
+- [Built with](#built-with)
+- [Author](#author)
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Features
 
-## Expanding the ESLint configuration
+- Add public GitHub repositories by their `owner/repository` name.
+- Keep the repository list in browser local storage.
+- Remove repositories from the list.
+- View repository details, including its owner, avatar, and description.
+- Browse issues filtered by all, open, or closed status.
+- Navigate through issues in pages of five.
+- Open an issue on GitHub.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Links
+
+- Repository: [GitHub](https://github.com/MiguellPC/respository-watcher)
+- Data source: [GitHub REST API](https://api.github.com/)
+
+## Getting started
+
+### Prerequisites
+
+- Node.js
+- Yarn
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/MiguellPC/respository-watcher.git
+   cd respository-watcher
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   yarn
+   ```
+
+3. Start the development server:
+
+   ```bash
+   yarn dev
+   ```
+
+4. Open the local URL printed by Vite in your browser.
+
+### Available scripts
+
+| Command | Description |
+| --- | --- |
+| `yarn dev` | Start the development server. |
+| `yarn build` | Create a production build in `dist`. |
+| `yarn preview` | Preview the production build locally. |
+| `yarn lint` | Run ESLint. |
+
+## Built with
+
+- React
+- JavaScript (JSX)
+- Vite
+- React Router
+- Axios
+- styled-components
+
+![Skills](https://skillicons.dev/icons?i=react,js,vite)
+
+## Author
+
+- GitHub - [MiguellPC](https://github.com/MiguellPC)
